@@ -14,9 +14,8 @@ func Must2[T, U any](x T, y U, err error) (T, U) {
 	return x, y
 }
 
-func Assert(cond bool, msg ...any) {
+func Assert(cond bool, msg any) {
 	if !cond {
-		// todo: allow Sprintf-style arguments here, with the first being a format string?
 		panic(msg)
 	}
 }
