@@ -1,4 +1,4 @@
-package main
+package prelude
 
 func Must(err error) {
 	Assert(err == nil, err)
